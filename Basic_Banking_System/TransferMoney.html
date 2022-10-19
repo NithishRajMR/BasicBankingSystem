@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Customer List</title>
+<link rel="stylesheet" href="w3.css">
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="Home.html" class="w3-bar-item w3-button"><b>Basic Banking System</b></a>
+    </div>
+    <script src="BankScript.js"></script>
+</head>
+<body class = "bg" onload="javascript:OptionLoad()">    
+
+    <div class="w3-container" style="width:800px; margin:10% auto;">
+        <div class="w3-container w3-teal">
+            <h2>Money Transfer Form</h2>
+          </div>
+        <form class="w3-container w3-white w3-card-4">
+            <br>
+            <p>      
+            <label class="w3-border-black BigFont">Sender</label>
+            <select class="w3-select w3-border" name="option" id = "Senders">
+                <option value="" disabled selected>Choose your option</option>
+              </select>    
+            </p>
+            <p>      
+            <label class="w3-border-black BigFont">Receiver:</label>
+            <select class="w3-select w3-border" name="option" id = "Receivers">
+                <option value="" disabled selected>Choose your option</option>
+              </select>   
+            </p>
+            <p>      
+            <label class="w3-border-black BigFont">Amount</label>
+            <input class="w3-input w3-border" type="text" required="" id="Amount">            </p>
+              <button type="button" class="w3-btn w3-padding w3-teal action_btn" style="width:120px" onclick="window.location.href='CustomerList.html'">Back</button>
+              <button type="button" class="w3-btn w3-padding w3-teal action_btn" style="width:120px" onclick="TransferMoney()">Send &nbsp; ❯</button>
+            </form>
+    </div>
+</body>
+</html>

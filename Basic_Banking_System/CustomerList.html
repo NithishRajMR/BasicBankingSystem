@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>Customer List</title>
+<link rel="stylesheet" href="w3.css">
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+      <a href="Home.html" class="w3-bar-item w3-button"><b>Basic Banking System</b></a>
+    </div>
+    <script src="BankScript.js"></script>
+</head>
+<body class = "bg" onload="javascript:tableCreate()">
+    <!-- table  -->
+    
+      <button class="w3-btn w3-xxlarge w3-white" style="margin:50px 27%; margin-right: 5%;" id="opener" type="button" onclick="window.location.href='TransferMoney.html'">Transfer Money </button>
+      <button class="w3-btn w3-xxlarge w3-white transfer_btn" style="margin:0px 0px;" id="opener" type="button" onclick="window.location.href='TransferHistory.html'">Transfer History </button>
+        <div class="w3-container " style="width:800px; margin:0 auto;" ">
+        </div>      
+    <div class="w3-container " style="width:800px; margin:0 auto;">
+        <div class="w3-table w3-white">
+            <table id="customerTable" class="w3-table w3-hoverable w3-bordered">
+                <thead>
+                    <tr class="table-danger">
+                        <th scope="col">SR. No.</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">E-mail ID</th>
+                        <th scope="col">Bank Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
